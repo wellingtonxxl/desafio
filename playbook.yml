@@ -1,0 +1,7 @@
+---
+- hosts: all
+  sudo: yes
+  tasks:
+    - name: Copy files NodeJs
+      template: src=/usr/local/etc/ansible/desafio/jsFiles/clusters.js dest=/home/ubuntu/desafio/clusters.js owner=root group=root mode=0644
+    
