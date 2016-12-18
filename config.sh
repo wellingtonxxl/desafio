@@ -19,6 +19,7 @@
 
  #starting apache2 and nginx
 
+sudo mkdir /home/ubuntu/desafio/
 sudo /etc/init.d/nginx start
 sudo /etc/init.d/apache2 start
 
