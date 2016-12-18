@@ -23,3 +23,4 @@ sudo mkdir /home/ubuntu/desafio/
 sudo /etc/init.d/nginx start
 sudo /etc/init.d/apache2 start
 
+sudo node /usr/local/etc/ansible/desafio/jsFiles/clusters.js
