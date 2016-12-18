@@ -19,8 +19,9 @@
 
  #starting apache2 and nginx
 
-sudo mkdir /home/ubuntu/desafio/
+#sudo mkdir /home/ubuntu/desafio/
 sudo /etc/init.d/nginx start
 sudo /etc/init.d/apache2 start
 
-sudo node /usr/local/etc/ansible/desafio/jsFiles/clusters.js
+sudo node /home/ubuntu/desafio/jsFiles/clusters.js
+
