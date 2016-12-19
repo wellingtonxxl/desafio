@@ -3,8 +3,9 @@
   sudo: yes
   tasks:
     - name: Copy files NodeJs
-      template: src=/usr/local/etc/ansible/desafio/jsFiles/clusters.js dest=/home/ubuntu/desafio/clusters.js
-      template: src=/usr/local/etc/ansible/desafio/jsFiles/app.js dest=/home/ubuntu/desafio/app.js
+      template: src=/usr/local/etc/ansible/desafio/jsFiles/clusters.js dest=/home/ubuntu/desafio/clusters.js owner=root group=root mode=0644
+    - name: Copy files NodeJs  
+      template: src=/usr/local/etc/ansible/desafio/jsFiles/app.js dest=/home/ubuntu/desafio/app.js owner=root group=root mode=0644
     - name: Copy configuration file nginx
       template: src=/usr/local/etc/ansible/desafio/nginx/default dest=/etc/nginx/sites-available/default
     - name: Copy configuration files apache2
