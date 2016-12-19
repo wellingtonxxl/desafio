@@ -17,11 +17,11 @@
  sudo apt-get install -y nginx
  
 
- #starting apache2 and nginx
+#starting apache2 and nginx
+sudo mkdir /home/ubuntu/desafio/
 
-#sudo mkdir /home/ubuntu/desafio/
-sudo /etc/init.d/nginx start
 sudo /etc/init.d/apache2 start
+sudo /etc/init.d/nginx start
 
 sudo node /home/ubuntu/desafio/jsFiles/clusters.js
 
