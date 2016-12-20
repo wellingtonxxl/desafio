@@ -1,0 +1,1 @@
+127.0.0.1 ansible_user=user_desafio ansible_ssh_pass=pass123 ansible_become=yes
