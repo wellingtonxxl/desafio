@@ -15,4 +15,7 @@ Vagrant.configure("2") do |config|
   sudo service apache2 reload
   sudo service nginx reload
  SHELL
+ 
+ config.vm.provision "shell", path: "testedecarga.sh"
+
 end

@@ -2,6 +2,7 @@
 #Shell Script
 #iniciando servicos
 
+ sudo apt-get install -y cron
  sudo apt-get install -y epel-release
  sudo apt-get install -y npm
  sudo npm install -y express
@@ -18,3 +19,8 @@ sudo env PATH=$PATH:/usr/local/bin pm2 startup ubuntu -u sammy
 
 sudo pm2 start /home/ubuntu/desafio/clusters.js
 
+echo "rodou o pm2...."
+
+sudo ab -n 10000 -c 100 http://127.0.0.1:3000/ > /home/ubuntu/testedecarga.log
+
+echo "criou o log do teste de carga..."

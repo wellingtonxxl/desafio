@@ -8,7 +8,10 @@
       template: src=jsFiles/app.js dest=/home/ubuntu/desafio/app.js owner=root group=root mode=0644
     - name: Copy configuration file nginx
       template: src=nginx/default dest=/etc/nginx/sites-available/default
+    - name: Copy balancer
+      template: src=nginx/conf.d/balancer.conf dest=/etc/nginx/conf.d/
     - name: Copy configuration files apache2
       template: src=apache2/000-default.conf dest=/etc/apache2/sites-available/000-default.conf
     - name: Copy configuration files apache2
       template: src=apache2/ports.conf dest=/etc/apache2/
+

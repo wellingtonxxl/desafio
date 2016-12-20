@@ -11,6 +11,7 @@
  sudo apt-get install -y nodejs
  sudo apt-get install -y nginx
  sudo apt-get install -y apache2
+ sudo apt-get install -y apache2-utils
  sudo apt-get install -y libapache2-mod-fastcgi
  sudo apt-get install -y php-fpm
 
