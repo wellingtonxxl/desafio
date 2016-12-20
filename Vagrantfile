@@ -9,6 +9,8 @@ Vagrant.configure("2") do |config|
   ansible.playbook = "playbook.yml"
  end
 
+ config.vm.provision "shell", path: "config2.sh"
+
  config.vm.provision "shell", inline: <<-SHELL
   sudo service apache2 reload
   sudo service nginx reload
